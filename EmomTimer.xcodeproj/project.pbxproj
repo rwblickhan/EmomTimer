@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD10461A285D54CF00B9F3B7 /* EmomTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD104619285D54CF00B9F3B7 /* EmomTimerApp.swift */; };
+		CD10461C285D54CF00B9F3B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD10461B285D54CF00B9F3B7 /* ContentView.swift */; };
+		CD10461E285D54D200B9F3B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD10461D285D54D200B9F3B7 /* Assets.xcassets */; };
+		CD104621285D54D200B9F3B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD104620285D54D200B9F3B7 /* Preview Assets.xcassets */; };
+		CD104623285D54D200B9F3B7 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD104622285D54D200B9F3B7 /* Persistence.swift */; };
+		CD104626285D54D200B9F3B7 /* EmomTimer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD104624285D54D200B9F3B7 /* EmomTimer.xcdatamodeld */; };
+		CD104630285D54D300B9F3B7 /* EmomTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD10462F285D54D300B9F3B7 /* EmomTimerTests.swift */; };
+		CD10463A285D54D300B9F3B7 /* EmomTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD104639285D54D300B9F3B7 /* EmomTimerUITests.swift */; };
+		CD10463C285D54D300B9F3B7 /* EmomTimerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD10463B285D54D300B9F3B7 /* EmomTimerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD10462C285D54D300B9F3B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD10460E285D54CF00B9F3B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD104615285D54CF00B9F3B7;
+			remoteInfo = EmomTimer;
+		};
+		CD104636285D54D300B9F3B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD10460E285D54CF00B9F3B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD104615285D54CF00B9F3B7;
+			remoteInfo = EmomTimer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD104616285D54CF00B9F3B7 /* EmomTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmomTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD104619285D54CF00B9F3B7 /* EmomTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmomTimerApp.swift; sourceTree = "<group>"; };
+		CD10461B285D54CF00B9F3B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CD10461D285D54D200B9F3B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD104620285D54D200B9F3B7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CD104622285D54D200B9F3B7 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		CD104625285D54D200B9F3B7 /* EmomTimer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EmomTimer.xcdatamodel; sourceTree = "<group>"; };
+		CD10462B285D54D300B9F3B7 /* EmomTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmomTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD10462F285D54D300B9F3B7 /* EmomTimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmomTimerTests.swift; sourceTree = "<group>"; };
+		CD104635285D54D300B9F3B7 /* EmomTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmomTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD104639285D54D300B9F3B7 /* EmomTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmomTimerUITests.swift; sourceTree = "<group>"; };
+		CD10463B285D54D300B9F3B7 /* EmomTimerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmomTimerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD104613285D54CF00B9F3B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD104628285D54D300B9F3B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD104632285D54D300B9F3B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD10460D285D54CF00B9F3B7 = {
+			isa = PBXGroup;
+			children = (
+				CD104618285D54CF00B9F3B7 /* EmomTimer */,
+				CD10462E285D54D300B9F3B7 /* EmomTimerTests */,
+				CD104638285D54D300B9F3B7 /* EmomTimerUITests */,
+				CD104617285D54CF00B9F3B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD104617285D54CF00B9F3B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD104616285D54CF00B9F3B7 /* EmomTimer.app */,
+				CD10462B285D54D300B9F3B7 /* EmomTimerTests.xctest */,
+				CD104635285D54D300B9F3B7 /* EmomTimerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD104618285D54CF00B9F3B7 /* EmomTimer */ = {
+			isa = PBXGroup;
+			children = (
+				CD104619285D54CF00B9F3B7 /* EmomTimerApp.swift */,
+				CD10461B285D54CF00B9F3B7 /* ContentView.swift */,
+				CD10461D285D54D200B9F3B7 /* Assets.xcassets */,
+				CD104622285D54D200B9F3B7 /* Persistence.swift */,
+				CD104624285D54D200B9F3B7 /* EmomTimer.xcdatamodeld */,
+				CD10461F285D54D200B9F3B7 /* Preview Content */,
+			);
+			path = EmomTimer;
+			sourceTree = "<group>";
+		};
+		CD10461F285D54D200B9F3B7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CD104620285D54D200B9F3B7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CD10462E285D54D300B9F3B7 /* EmomTimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD10462F285D54D300B9F3B7 /* EmomTimerTests.swift */,
+			);
+			path = EmomTimerTests;
+			sourceTree = "<group>";
+		};
+		CD104638285D54D300B9F3B7 /* EmomTimerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD104639285D54D300B9F3B7 /* EmomTimerUITests.swift */,
+				CD10463B285D54D300B9F3B7 /* EmomTimerUITestsLaunchTests.swift */,
+			);
+			path = EmomTimerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD104615285D54CF00B9F3B7 /* EmomTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD10463F285D54D300B9F3B7 /* Build configuration list for PBXNativeTarget "EmomTimer" */;
+			buildPhases = (
+				CD104612285D54CF00B9F3B7 /* Sources */,
+				CD104613285D54CF00B9F3B7 /* Frameworks */,
+				CD104614285D54CF00B9F3B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmomTimer;
+			productName = EmomTimer;
+			productReference = CD104616285D54CF00B9F3B7 /* EmomTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD10462A285D54D300B9F3B7 /* EmomTimerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD104642285D54D300B9F3B7 /* Build configuration list for PBXNativeTarget "EmomTimerTests" */;
+			buildPhases = (
+				CD104627285D54D300B9F3B7 /* Sources */,
+				CD104628285D54D300B9F3B7 /* Frameworks */,
+				CD104629285D54D300B9F3B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD10462D285D54D300B9F3B7 /* PBXTargetDependency */,
+			);
+			name = EmomTimerTests;
+			productName = EmomTimerTests;
+			productReference = CD10462B285D54D300B9F3B7 /* EmomTimerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD104634285D54D300B9F3B7 /* EmomTimerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD104645285D54D300B9F3B7 /* Build configuration list for PBXNativeTarget "EmomTimerUITests" */;
+			buildPhases = (
+				CD104631285D54D300B9F3B7 /* Sources */,
+				CD104632285D54D300B9F3B7 /* Frameworks */,
+				CD104633285D54D300B9F3B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD104637285D54D300B9F3B7 /* PBXTargetDependency */,
+			);
+			name = EmomTimerUITests;
+			productName = EmomTimerUITests;
+			productReference = CD104635285D54D300B9F3B7 /* EmomTimerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD10460E285D54CF00B9F3B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					CD104615285D54CF00B9F3B7 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					CD10462A285D54D300B9F3B7 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = CD104615285D54CF00B9F3B7;
+					};
+					CD104634285D54D300B9F3B7 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = CD104615285D54CF00B9F3B7;
+					};
+				};
+			};
+			buildConfigurationList = CD104611285D54CF00B9F3B7 /* Build configuration list for PBXProject "EmomTimer" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD10460D285D54CF00B9F3B7;
+			productRefGroup = CD104617285D54CF00B9F3B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD104615285D54CF00B9F3B7 /* EmomTimer */,
+				CD10462A285D54D300B9F3B7 /* EmomTimerTests */,
+				CD104634285D54D300B9F3B7 /* EmomTimerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD104614285D54CF00B9F3B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD104621285D54D200B9F3B7 /* Preview Assets.xcassets in Resources */,
+				CD10461E285D54D200B9F3B7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD104629285D54D300B9F3B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD104633285D54D300B9F3B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD104612285D54CF00B9F3B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD104623285D54D200B9F3B7 /* Persistence.swift in Sources */,
+				CD104626285D54D200B9F3B7 /* EmomTimer.xcdatamodeld in Sources */,
+				CD10461C285D54CF00B9F3B7 /* ContentView.swift in Sources */,
+				CD10461A285D54CF00B9F3B7 /* EmomTimerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD104627285D54D300B9F3B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD104630285D54D300B9F3B7 /* EmomTimerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD104631285D54D300B9F3B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD10463C285D54D300B9F3B7 /* EmomTimerUITestsLaunchTests.swift in Sources */,
+				CD10463A285D54D300B9F3B7 /* EmomTimerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD10462D285D54D300B9F3B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD104615285D54CF00B9F3B7 /* EmomTimer */;
+			targetProxy = CD10462C285D54D300B9F3B7 /* PBXContainerItemProxy */;
+		};
+		CD104637285D54D300B9F3B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD104615285D54CF00B9F3B7 /* EmomTimer */;
+			targetProxy = CD104636285D54D300B9F3B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CD10463D285D54D300B9F3B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD10463E285D54D300B9F3B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD104640285D54D300B9F3B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EmomTimer/Preview Content\"";
+				DEVELOPMENT_TEAM = C436KHVHT4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.rwblickhan.EmomTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD104641285D54D300B9F3B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EmomTimer/Preview Content\"";
+				DEVELOPMENT_TEAM = C436KHVHT4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.rwblickhan.EmomTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CD104643285D54D300B9F3B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C436KHVHT4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.rwblickhan.EmomTimerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmomTimer.app/EmomTimer";
+			};
+			name = Debug;
+		};
+		CD104644285D54D300B9F3B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C436KHVHT4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.rwblickhan.EmomTimerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmomTimer.app/EmomTimer";
+			};
+			name = Release;
+		};
+		CD104646285D54D300B9F3B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C436KHVHT4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.rwblickhan.EmomTimerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EmomTimer;
+			};
+			name = Debug;
+		};
+		CD104647285D54D300B9F3B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C436KHVHT4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.rwblickhan.EmomTimerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EmomTimer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD104611285D54CF00B9F3B7 /* Build configuration list for PBXProject "EmomTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD10463D285D54D300B9F3B7 /* Debug */,
+				CD10463E285D54D300B9F3B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD10463F285D54D300B9F3B7 /* Build configuration list for PBXNativeTarget "EmomTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD104640285D54D300B9F3B7 /* Debug */,
+				CD104641285D54D300B9F3B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD104642285D54D300B9F3B7 /* Build configuration list for PBXNativeTarget "EmomTimerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD104643285D54D300B9F3B7 /* Debug */,
+				CD104644285D54D300B9F3B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD104645285D54D300B9F3B7 /* Build configuration list for PBXNativeTarget "EmomTimerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD104646285D54D300B9F3B7 /* Debug */,
+				CD104647285D54D300B9F3B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CD104624285D54D200B9F3B7 /* EmomTimer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CD104625285D54D200B9F3B7 /* EmomTimer.xcdatamodel */,
+			);
+			currentVersion = CD104625285D54D200B9F3B7 /* EmomTimer.xcdatamodel */;
+			path = EmomTimer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CD10460E285D54CF00B9F3B7 /* Project object */;
+}
