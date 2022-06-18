@@ -13,7 +13,7 @@ struct EmomTimerApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CoreTabView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

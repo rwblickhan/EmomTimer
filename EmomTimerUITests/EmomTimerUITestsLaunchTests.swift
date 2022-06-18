@@ -8,7 +8,6 @@
 import XCTest
 
 class EmomTimerUITestsLaunchTests: XCTestCase {
-
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
     }
