@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CD00DBFE2860DA23008E28E5 /* WorkoutCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD00DBFD2860DA23008E28E5 /* WorkoutCardView.swift */; };
+		CD00DC0428612005008E28E5 /* AddWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD00DC0328612005008E28E5 /* AddWorkoutView.swift */; };
+		CD00DC062861296F008E28E5 /* AddExerciseCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD00DC052861296F008E28E5 /* AddExerciseCardView.swift */; };
 		CD10461A285D54CF00B9F3B7 /* EmomTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD104619285D54CF00B9F3B7 /* EmomTimerApp.swift */; };
 		CD10461C285D54CF00B9F3B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD10461B285D54CF00B9F3B7 /* ContentView.swift */; };
 		CD10461E285D54D200B9F3B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD10461D285D54D200B9F3B7 /* Assets.xcassets */; };
@@ -44,6 +46,8 @@
 
 /* Begin PBXFileReference section */
 		CD00DBFD2860DA23008E28E5 /* WorkoutCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCardView.swift; sourceTree = "<group>"; };
+		CD00DC0328612005008E28E5 /* AddWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutView.swift; sourceTree = "<group>"; };
+		CD00DC052861296F008E28E5 /* AddExerciseCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseCardView.swift; sourceTree = "<group>"; };
 		CD104616285D54CF00B9F3B7 /* EmomTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmomTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD104619285D54CF00B9F3B7 /* EmomTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmomTimerApp.swift; sourceTree = "<group>"; };
 		CD10461B285D54CF00B9F3B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -120,11 +124,13 @@
 				CDE0814E285DA5E800044EA4 /* AboutView.swift */,
 				CD104622285D54D200B9F3B7 /* Persistence.swift */,
 				CDE0814A285D97A900044EA4 /* Workout+Helpers.swift */,
+				CDE0814C285D97E300044EA4 /* WorkoutsView.swift */,
+				CD00DBFD2860DA23008E28E5 /* WorkoutCardView.swift */,
 				CD10461D285D54D200B9F3B7 /* Assets.xcassets */,
 				CD104624285D54D200B9F3B7 /* EmomTimer.xcdatamodeld */,
 				CD10461F285D54D200B9F3B7 /* Preview Content */,
-				CDE0814C285D97E300044EA4 /* WorkoutsView.swift */,
-				CD00DBFD2860DA23008E28E5 /* WorkoutCardView.swift */,
+				CD00DC0328612005008E28E5 /* AddWorkoutView.swift */,
+				CD00DC052861296F008E28E5 /* AddExerciseCardView.swift */,
 			);
 			path = EmomTimer;
 			sourceTree = "<group>";
@@ -294,7 +300,9 @@
 				CD104623285D54D200B9F3B7 /* Persistence.swift in Sources */,
 				CD104626285D54D200B9F3B7 /* EmomTimer.xcdatamodeld in Sources */,
 				CD10461C285D54CF00B9F3B7 /* ContentView.swift in Sources */,
+				CD00DC0428612005008E28E5 /* AddWorkoutView.swift in Sources */,
 				CD10461A285D54CF00B9F3B7 /* EmomTimerApp.swift in Sources */,
+				CD00DC062861296F008E28E5 /* AddExerciseCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

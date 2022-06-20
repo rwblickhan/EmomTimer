@@ -9,6 +9,7 @@ import SwiftUI
 
 struct WorkoutsView: View {
     @Environment(\.managedObjectContext) private var viewContext
+    @State private var showSheet = false
 
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Workout.rank, ascending: false)],
@@ -24,6 +25,19 @@ struct WorkoutsView: View {
                     WorkoutCardView(workout: workout)
                 }
             }
+            .navigationTitle(String(localized: "Workouts"))
+            .toolbar { addButton }
+            .sheet(isPresented: $showSheet) {
+                AddWorkoutView()
+            }
+        }
+    }
+
+    private var addButton: some View {
+        Button {
+            showSheet = true
+        } label: {
+            Image(systemName: "plus")
         }
     }
 }
