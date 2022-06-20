@@ -13,15 +13,19 @@ struct AddWorkoutView: View {
 
     @State private var workoutName = ""
     @State private var numRounds = 3
+    @State private var exercises = [PartialExercise]()
 
     var body: some View {
         VStack {
             TextField(String(localized: "Name Your Workout"), text: $workoutName)
                 .font(.title)
                 .onChange(of: workoutName, perform: { _ in onEdit() })
-            ScrollView {
-                AddExerciseCardView()
+            List {
+                ForEach($exercises) { exercise in
+                    AddExerciseCardView(exercise: exercise)
+                }
             }
+            addExerciseButton
             Spacer()
             Stepper(
                 String.localizedStringWithFormat("Repeat for %d rounds", numRounds),
@@ -35,11 +39,23 @@ struct AddWorkoutView: View {
     }
 
     private var hasEdits: Bool {
-        !workoutName.isEmpty
+        !workoutName.isEmpty || !exercises.isEmpty
     }
 
     private func onEdit() {
         allowSwipeToDismiss = !hasEdits
+    }
+    
+    private var addExerciseButton: some View {
+        Button(action: {
+            exercises.append(PartialExercise(id: UUID()))
+            onEdit()
+        }, label: {
+           Text(String(localized: "Add Exercise"))
+                .font(.headline)
+                .padding(5)
+        })
+        .buttonStyle(.bordered)
     }
 
     private var saveButton: some View {
