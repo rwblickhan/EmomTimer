@@ -20,13 +20,15 @@ struct AddWorkoutView: View {
             TextField(String(localized: "Name Your Workout"), text: $workoutName)
                 .font(.title)
                 .onChange(of: workoutName, perform: { _ in onEdit() })
-            List {
+//            List {
+            ScrollView {
                 ForEach($exercises) { exercise in
                     AddExerciseCardView(exercise: exercise)
                 }
             }
-            addExerciseButton
+//            }
             Spacer()
+            addExerciseButton
             Stepper(
                 String.localizedStringWithFormat("Repeat for %d rounds", numRounds),
                 value: $numRounds,
@@ -45,13 +47,13 @@ struct AddWorkoutView: View {
     private func onEdit() {
         allowSwipeToDismiss = !hasEdits
     }
-    
+
     private var addExerciseButton: some View {
         Button(action: {
-            exercises.append(PartialExercise(id: UUID()))
+            exercises.append(PartialExercise(id: UUID(), rank: Double(exercises.count)))
             onEdit()
         }, label: {
-           Text(String(localized: "Add Exercise"))
+            Text(String(localized: "Add Exercise"))
                 .font(.headline)
                 .padding(5)
         })

@@ -16,11 +16,34 @@ struct PartialExercise: Identifiable {
 }
 
 struct AddExerciseCardView: View {
-    @Binding var exercise: PartialExercise
+    private enum TimeType {
+        case seconds
+        case minutes
+    }
 
+    @Binding var exercise: PartialExercise
+    @State private var timeType: TimeType = .seconds
+    
     var body: some View {
         VStack {
             TextField(String(localized: "Name Exercise"), text: $exercise.name)
+                .font(.headline)
+            HStack {
+                TextField("3", value: $exercise.numReps, formatter: NumberFormatter())
+                    .font(.subheadline)
+                Text(String(localized: "Rounds"))
+                    .font(.subheadline)
+            }
+            HStack {
+                TextField("60", value: $exercise.numReps, formatter: NumberFormatter())
+                    .font(.subheadline)
+                Picker("", selection: $timeType) {
+                    Text(String(localized: "Seconds")).tag(TimeType.seconds)
+                    .font(.subheadline)
+                    Text(String(localized: "Minutes")).tag(TimeType.minutes)
+                    .font(.subheadline)
+                }
+            }
         }
         .padding()
     }
