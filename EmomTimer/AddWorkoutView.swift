@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AddWorkoutView: View {
+    @Environment(\.managedObjectContext) private var viewContext
     @Environment(\.presentationMode) var presentationMode
     @State private var workoutName = ""
     @State private var numRounds = 3
@@ -18,7 +19,7 @@ struct AddWorkoutView: View {
     }
 
     private var isComplete: Bool {
-        !workoutName.isEmpty && exercises.count > 1 && exercises.allSatisfy(\.isComplete)
+        !workoutName.isEmpty && exercises.count > 0 && exercises.allSatisfy(\.isComplete)
     }
 
     var body: some View {
@@ -39,17 +40,39 @@ struct AddWorkoutView: View {
     private var saveButton: some View {
         Button(action: {
             guard isComplete else { return }
-            // TODO:
+            let workout = Workout(context: viewContext)
+            workout.name = workoutName
+            workout.numRounds = Int32(numRounds)
+            // TODO: fix
+            workout.rank = 0
+            var exercises = [Exercise]()
+            for partialExercise in exercises {
+                let exercise = Exercise(context: viewContext)
+                // TODO: fix
+                exercise.rank = 0
+                exercise.name = partialExercise.name
+                exercise.numReps = partialExercise.numReps
+                exercise.numSeconds = partialExercise.numSeconds
+                exercises.append(exercise)
+            }
+            workout.exercises = NSOrderedSet(array: exercises)
+            
+            do {
+                try viewContext.save()
+            } catch {
+                // TODO: better error handling?
+                let nsError = error as NSError
+                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+            }
         }, label: {
             Text(String(localized: "Save"))
                 .font(.headline)
-                .foregroundColor(Color.white)
                 .frame(maxWidth: .infinity)
+                .padding(5)
         })
+        .buttonStyle(.borderedProminent)
         .disabled(!isComplete)
         .padding(12)
-        .background(Color.blue)
-        .cornerRadius(20)
     }
 }
 
