@@ -7,14 +7,6 @@
 
 import SwiftUI
 
-struct PartialExercise: Identifiable {
-    var id: UUID
-    var name: String = ""
-    var numReps: Int?
-    var numSeconds: Int?
-    var rank: Double = -1
-}
-
 struct AddExerciseCardView: View {
     private enum TimeType {
         case seconds
@@ -24,10 +16,22 @@ struct AddExerciseCardView: View {
     @Binding var exercise: PartialExercise
     @State private var timeType: TimeType = .seconds
 
+    var onDelete: (() -> Void)?
+
     var body: some View {
         VStack {
-            TextField(String(localized: "Name Exercise"), text: $exercise.name)
-                .font(.headline)
+            HStack {
+                TextField(String(localized: "Name Exercise"), text: $exercise.name)
+                    .font(.headline)
+                if onDelete != nil {
+                    Button(action: {
+                        onDelete?()
+                    }, label: {
+                        Image(systemName: "trash")
+                    })
+                    .frame(minWidth: 44, minHeight: 44)
+                }
+            }
             HStack {
                 VStack {
                     TextField("3", value: $exercise.numReps, formatter: NumberFormatter())
@@ -66,6 +70,7 @@ struct AddExerciseCardView: View {
 
 struct AddExerciseCardView_Previews: PreviewProvider {
     static var previews: some View {
-        AddExerciseCardView(exercise: .constant(PartialExercise(id: UUID())))
+        AddExerciseCardView(exercise: .constant(PartialExercise()))
+        AddExerciseCardView(exercise: .constant(PartialExercise()), onDelete: {})
     }
 }

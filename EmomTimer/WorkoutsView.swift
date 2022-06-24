@@ -27,9 +27,7 @@ struct WorkoutsView: View {
             }
             .navigationTitle(String(localized: "Workouts"))
             .toolbar { addButton }
-            .sheet(isPresented: $showSheet) {
-                AddWorkoutView()
-            }
+            .sheet(isPresented: $showSheet) { AddWorkoutView() }
         }
     }
 
