@@ -46,17 +46,16 @@ struct AddWorkoutView: View {
             // TODO: fix
             workout.rank = 0
             var persistedExercises = [Exercise]()
-            for partialExercise in exercises {
+            for (i, partialExercise) in zip(exercises.indices, exercises) {
                 let exercise = Exercise(context: viewContext)
-                // TODO: fix
-                exercise.rank = 0
+                exercise.rank = Double(i)
                 exercise.name = partialExercise.name
                 exercise.numReps = Int32(partialExercise.numReps ?? 0)
                 exercise.numSeconds = Int32(partialExercise.numSeconds ?? 0)
                 exercise.workout = workout
                 persistedExercises.append(exercise)
             }
-            
+
             do {
                 try viewContext.save()
             } catch {

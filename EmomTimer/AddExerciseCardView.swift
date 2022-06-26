@@ -15,6 +15,7 @@ struct AddExerciseCardView: View {
 
     @Binding var exercise: PartialExercise
     @State private var timeType: TimeType = .seconds
+    @State private var timeValue: Int? = nil
 
     var onDelete: (() -> Void)?
 
@@ -40,17 +41,18 @@ struct AddExerciseCardView: View {
                         .frame(maxWidth: 44, maxHeight: 44)
                         .keyboardType(.decimalPad)
 
-                    TextField("60", value: $exercise.numSeconds, format: .number)
+                    TextField("60", value: $timeValue, format: .number)
                         .font(.subheadline)
                         .textFieldStyle(.roundedBorder)
                         .frame(maxWidth: 44, maxHeight: 44)
                         .keyboardType(.decimalPad)
+                        .onChange(of: timeValue, perform: onChangeTimeValue)
                 }
                 VStack(alignment: .leading) {
                     Text(String(localized: "Rounds"))
                         .font(.subheadline)
                         .frame(maxHeight: 44)
-                    Picker("", selection: $timeType) {
+                    Picker(String(localized: "Time type"), selection: $timeType) {
                         Text(String(localized: "Seconds")).tag(TimeType.seconds)
                             .font(.subheadline)
                         Text(String(localized: "Minutes")).tag(TimeType.minutes)
@@ -67,6 +69,19 @@ struct AddExerciseCardView: View {
             RoundedRectangle(cornerRadius: 5)
                 .stroke(Color.blue, lineWidth: 1))
         .padding()
+    }
+    
+    private func onChangeTimeValue(newValue: Int?) {
+        if let newValue = newValue {
+            switch timeType {
+            case .seconds:
+                exercise.numSeconds = newValue
+            case .minutes:
+                exercise.numSeconds = newValue * 60
+            }
+        } else {
+            exercise.numSeconds = nil
+        }
     }
 }
 
