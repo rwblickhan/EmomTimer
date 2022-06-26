@@ -59,7 +59,6 @@ struct AddWorkoutView: View {
             do {
                 try viewContext.save()
             } catch {
-                #warning("Better error handling")
                 let nsError = error as NSError
                 fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
             }
