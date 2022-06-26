@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AddWorkoutView: View {
+    @AppStorage("num_workouts") private var numWorkouts: Int?
     @Environment(\.managedObjectContext) private var viewContext
     @Environment(\.presentationMode) var presentationMode
     @State private var workoutName = ""
@@ -43,8 +44,7 @@ struct AddWorkoutView: View {
             let workout = Workout(context: viewContext)
             workout.name = workoutName
             workout.numRounds = Int32(numRounds)
-            #warning("Fix rank")
-            workout.rank = 0
+            workout.rank = Double(numWorkouts ?? 0)
             var persistedExercises = [Exercise]()
             for (i, partialExercise) in zip(exercises.indices, exercises) {
                 let exercise = Exercise(context: viewContext)
@@ -58,6 +58,7 @@ struct AddWorkoutView: View {
 
             do {
                 try viewContext.save()
+                numWorkouts = (numWorkouts ?? 0) + 1
             } catch {
                 let nsError = error as NSError
                 fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
