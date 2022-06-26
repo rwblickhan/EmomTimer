@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AddWorkoutView: View {
-    @AppStorage("num_workouts") private var numWorkouts: Int?
+    @AppStorage(AppStorageConstants.numWorkoutsKey) private var numWorkouts: Int?
     @Environment(\.managedObjectContext) private var viewContext
     @Environment(\.presentationMode) var presentationMode
     @State private var workoutName = ""
