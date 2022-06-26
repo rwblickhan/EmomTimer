@@ -45,17 +45,17 @@ struct AddWorkoutView: View {
             workout.numRounds = Int32(numRounds)
             // TODO: fix
             workout.rank = 0
-            var exercises = [Exercise]()
+            var persistedExercises = [Exercise]()
             for partialExercise in exercises {
                 let exercise = Exercise(context: viewContext)
                 // TODO: fix
                 exercise.rank = 0
                 exercise.name = partialExercise.name
-                exercise.numReps = partialExercise.numReps
-                exercise.numSeconds = partialExercise.numSeconds
-                exercises.append(exercise)
+                exercise.numReps = Int32(partialExercise.numReps ?? 0)
+                exercise.numSeconds = Int32(partialExercise.numSeconds ?? 0)
+                exercise.workout = workout
+                persistedExercises.append(exercise)
             }
-            workout.exercises = NSOrderedSet(array: exercises)
             
             do {
                 try viewContext.save()

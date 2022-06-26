@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct WorkoutsView: View {
-    @Environment(\.managedObjectContext) private var viewContext
     @State private var showSheet = false
 
     @FetchRequest(
@@ -43,6 +42,5 @@ struct WorkoutsView: View {
 struct WorkoutsView_Previews: PreviewProvider {
     static var previews: some View {
         WorkoutsView()
-            .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }

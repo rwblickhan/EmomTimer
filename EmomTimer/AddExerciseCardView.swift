@@ -34,15 +34,17 @@ struct AddExerciseCardView: View {
             }
             HStack {
                 VStack {
-                    TextField("3", value: $exercise.numReps, formatter: NumberFormatter())
+                    TextField("3", value: $exercise.numReps, format: .number)
                         .font(.subheadline)
                         .textFieldStyle(.roundedBorder)
                         .frame(maxWidth: 44, maxHeight: 44)
+                        .keyboardType(.decimalPad)
 
-                    TextField("60", value: $exercise.numReps, formatter: NumberFormatter())
+                    TextField("60", value: $exercise.numSeconds, format: .number)
                         .font(.subheadline)
                         .textFieldStyle(.roundedBorder)
                         .frame(maxWidth: 44, maxHeight: 44)
+                        .keyboardType(.decimalPad)
                 }
                 VStack(alignment: .leading) {
                     Text(String(localized: "Rounds"))
