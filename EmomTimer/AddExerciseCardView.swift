@@ -15,7 +15,7 @@ struct AddExerciseCardView: View {
 
     @Binding var exercise: PartialExercise
     @State private var timeType: TimeType = .seconds
-    @State private var timeValue: Int? = nil
+    @State private var timeValue: Int?
 
     var onDelete: (() -> Void)?
 
@@ -70,7 +70,7 @@ struct AddExerciseCardView: View {
                 .stroke(Color.blue, lineWidth: 1))
         .padding()
     }
-    
+
     private func onChangeTimeValue(newValue: Int?) {
         if let newValue = newValue {
             switch timeType {
