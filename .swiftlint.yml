@@ -1,5 +1,13 @@
+---
 disabled_rules:
-    - trailing_comma
-    - line_length
-    - trailing_whitespace
-    - identifier_name
+  - trailing_comma
+  - line_length
+  - trailing_whitespace
+  - identifier_name
+custom_rules:
+  no-warnings:
+    included: ".\\.swift"
+    name: "No #warnings"
+    regex: "#warning"
+    message: "Don't leave #warnings in the codebase!"
+    severity: warning
