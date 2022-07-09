@@ -11,7 +11,6 @@
 		CD00DC0428612005008E28E5 /* AddWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD00DC0328612005008E28E5 /* AddWorkoutView.swift */; };
 		CD00DC062861296F008E28E5 /* AddExerciseCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD00DC052861296F008E28E5 /* AddExerciseCardView.swift */; };
 		CD10461A285D54CF00B9F3B7 /* EmomTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD104619285D54CF00B9F3B7 /* EmomTimerApp.swift */; };
-		CD10461C285D54CF00B9F3B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD10461B285D54CF00B9F3B7 /* ContentView.swift */; };
 		CD10461E285D54D200B9F3B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD10461D285D54D200B9F3B7 /* Assets.xcassets */; };
 		CD104623285D54D200B9F3B7 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD104622285D54D200B9F3B7 /* Persistence.swift */; };
 		CD104626285D54D200B9F3B7 /* EmomTimer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD104624285D54D200B9F3B7 /* EmomTimer.xcdatamodeld */; };
@@ -52,7 +51,6 @@
 		CD00DC052861296F008E28E5 /* AddExerciseCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseCardView.swift; sourceTree = "<group>"; };
 		CD104616285D54CF00B9F3B7 /* EmomTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmomTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD104619285D54CF00B9F3B7 /* EmomTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmomTimerApp.swift; sourceTree = "<group>"; };
-		CD10461B285D54CF00B9F3B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CD10461D285D54D200B9F3B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD104622285D54D200B9F3B7 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		CD104625285D54D200B9F3B7 /* EmomTimer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EmomTimer.xcdatamodel; sourceTree = "<group>"; };
@@ -172,7 +170,6 @@
 				CD00DC052861296F008E28E5 /* AddExerciseCardView.swift */,
 				CD7B400F286574B400B8D57D /* AddExercisesView.swift */,
 				CD00DC0328612005008E28E5 /* AddWorkoutView.swift */,
-				CD10461B285D54CF00B9F3B7 /* ContentView.swift */,
 				CDE0813B285D930700044EA4 /* CoreTabView.swift */,
 				CDE08141285D956500044EA4 /* SettingsView.swift */,
 				CDE0813F285D954E00044EA4 /* TimerView.swift */,
@@ -323,7 +320,6 @@
 				CD104623285D54D200B9F3B7 /* Persistence.swift in Sources */,
 				CD7B4010286574B400B8D57D /* AddExercisesView.swift in Sources */,
 				CD104626285D54D200B9F3B7 /* EmomTimer.xcdatamodeld in Sources */,
-				CD10461C285D54CF00B9F3B7 /* ContentView.swift in Sources */,
 				CD00DC0428612005008E28E5 /* AddWorkoutView.swift in Sources */,
 				CD10461A285D54CF00B9F3B7 /* EmomTimerApp.swift in Sources */,
 				CD00DC062861296F008E28E5 /* AddExerciseCardView.swift in Sources */,
