@@ -34,7 +34,6 @@ struct PersistenceController {
         let workout1 = Workout(context: viewContext)
         workout1.name = "Triple Sweat"
         workout1.numRounds = 8
-        workout1.rank = 1
         workout1.exercises = NSOrderedSet(array: [exercise1, exercise2, exercise3])
 
         let exercise4 = Exercise(context: viewContext)
@@ -82,7 +81,6 @@ struct PersistenceController {
         let workout2 = Workout(context: viewContext)
         workout2.name = "Full Body Express"
         workout2.numRounds = 2
-        workout2.rank = 2
         workout2
             .exercises =
             NSOrderedSet(array: [exercise4, exercise5, exercise6, exercise7, exercise8, exercise9, exercise10])
@@ -102,7 +100,6 @@ struct PersistenceController {
         let workout3 = Workout(context: viewContext)
         workout3.name = "Grip That Bar"
         workout3.numRounds = 4
-        workout3.rank = 3
         workout3.exercises = NSOrderedSet(array: [exercise11, exercise12])
 
         do {

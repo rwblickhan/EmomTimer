@@ -11,7 +11,7 @@ struct WorkoutsView: View {
     @State private var showSheet = false
 
     @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Workout.rank, ascending: false)],
+        sortDescriptors: [NSSortDescriptor(keyPath: \Workout.modificationDate, ascending: false)],
         animation: .default)
     private var workouts: FetchedResults<Workout>
 

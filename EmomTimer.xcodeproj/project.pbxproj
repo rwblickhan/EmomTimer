@@ -19,7 +19,6 @@
 		CD10463C285D54D300B9F3B7 /* EmomTimerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD10463B285D54D300B9F3B7 /* EmomTimerUITestsLaunchTests.swift */; };
 		CD7B4010286574B400B8D57D /* AddExercisesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7B400F286574B400B8D57D /* AddExercisesView.swift */; };
 		CD7B40122865760500B8D57D /* PartialExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7B40112865760500B8D57D /* PartialExercise.swift */; };
-		CD7B4014286900A900B8D57D /* AppStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7B4013286900A900B8D57D /* AppStorage.swift */; };
 		CDE0813C285D930700044EA4 /* CoreTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE0813B285D930700044EA4 /* CoreTabView.swift */; };
 		CDE08140285D954E00044EA4 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE0813F285D954E00044EA4 /* TimerView.swift */; };
 		CDE08142285D956500044EA4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE08141285D956500044EA4 /* SettingsView.swift */; };
@@ -61,7 +60,6 @@
 		CD10463B285D54D300B9F3B7 /* EmomTimerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmomTimerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CD7B400F286574B400B8D57D /* AddExercisesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExercisesView.swift; sourceTree = "<group>"; };
 		CD7B40112865760500B8D57D /* PartialExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartialExercise.swift; sourceTree = "<group>"; };
-		CD7B4013286900A900B8D57D /* AppStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorage.swift; sourceTree = "<group>"; };
 		CDE0813B285D930700044EA4 /* CoreTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTabView.swift; sourceTree = "<group>"; };
 		CDE0813F285D954E00044EA4 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		CDE08141285D956500044EA4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -147,7 +145,6 @@
 		CDE10540287A0BBA00E8112D /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				CD7B4013286900A900B8D57D /* AppStorage.swift */,
 				CD104622285D54D200B9F3B7 /* Persistence.swift */,
 				CD104624285D54D200B9F3B7 /* EmomTimer.xcdatamodeld */,
 			);
@@ -309,7 +306,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDE08140285D954E00044EA4 /* TimerView.swift in Sources */,
-				CD7B4014286900A900B8D57D /* AppStorage.swift in Sources */,
 				CD7B40122865760500B8D57D /* PartialExercise.swift in Sources */,
 				CDE0814B285D97A900044EA4 /* Workout+Helpers.swift in Sources */,
 				CDE0814D285D97E300044EA4 /* WorkoutsView.swift in Sources */,
