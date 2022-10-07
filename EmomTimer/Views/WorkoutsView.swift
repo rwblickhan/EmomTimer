@@ -25,9 +25,16 @@ struct WorkoutsView: View {
                 }
             }
             .navigationTitle(String(localized: "Workouts"))
-            .toolbar { addButton }
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) { editButton }
+                ToolbarItem(placement: .navigationBarTrailing) { addButton }
+            }
             .sheet(isPresented: $showSheet) { AddWorkoutView() }
         }
+    }
+    
+    private var editButton: some View {
+        Button("Edit", action: { })
     }
 
     private var addButton: some View {
